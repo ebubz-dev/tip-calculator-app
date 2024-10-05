@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <script defer src="script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo" width="80px">
+  </header>
+  <main>
+    <section>
+      <h2 class="bill">Bill</h2>
+      <input type="text" name="long" id="bill" placeholder="0">
+      <h2 class="tip">Select Tip %</h2>
+      <div class="grid">
+        <input type="button" value="5%" class="button percent active">
+        <input type="button" value="10%" class="button percent active">
+        <input type="button" value="15%" class="button percent active">
+        <input type="button" value="20%" class="button percent active">
+        <input type="button" value="25%" class="button percent active">
+        <input type="text" name="button" class="custom percent" placeholder="Custom">
+      </div>
+      <h2 class="tip">Number of People<span class="right">Can't be zero</span></h2>
+      <input type="text" name="long" id="people" placeholder="0">
+    </section>
+    <section>
+      <div class="relative">
+        <div class="subsect">
+          <div>
+            <h2 class="h2">Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+          <h1><img src="./images/icon-dollar2.svg" alt="dollar" height="30px"><span id="tip">0.00</span></h1>
+        </div>
+        <div class="subsect">
+        <div>
+          <h2 class="h2">Total</h2>
+          <p>/ person</p>
+        </div>
+        <h1><img src="./images/icon-dollar2.svg" alt="dollar" height="30px"><span id="total">0.00</span></h1>
+        </div>
+        <input type="button" name="reset" value="RESET" id="reset">
+    </div>
+    </section>
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="#">e.bub.z</a>.
+  </footer>
+</body>
+</html>
