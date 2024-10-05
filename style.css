@@ -97,16 +97,18 @@ input[name=reset] {
     padding: 0.5em;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: var(--cyan-6);
     color: var(--cyan-1);
     border: 0;
     border-radius: 0.3em;
 }
-input[name=reset]:hover {
+.reseted {
     background-color: var(--cyan-4);
 }
-input[name=reset]:active {
+.hover {
     background-color: var(--cyan-6);
+}
+input[name=reset]:active {
+    background-color: var(--cyan-4);
 }
 input[name=button] {
     text-align: right;
